@@ -1,19 +1,18 @@
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
 
 <style>
     body {
         margin: 0 auto;
+        overflow-x: hidden
     }
 
     .map_btn {
         float: left;
         width: 50%;
     }
-
 
     .row:after {
         content: "";
@@ -31,8 +30,8 @@
     .modal {
         display: none;
         position: fixed;
-        z-index: 1;
-        padding-top: 6rem;
+        z-index: 50;
+        padding-top: 8rem;
         left: 0;
         top: 0;
         width: 100%;
@@ -44,7 +43,6 @@
     /* Modal Content */
     .modal-content {
         position: relative;
-        background-color: #fefefe;
         margin: auto;
         padding: 0;
         width: 90%;
@@ -55,10 +53,9 @@
     .close {
         color: white;
         position: absolute;
-        top: 2rem;
-        right: 2rem;
+        top: 4.8rem;
+        right: 1.6rem;
         font-size: 2.5rem;
-        font-weight: bold;
     }
 
 
@@ -72,12 +69,12 @@
     .next {
         cursor: pointer;
         position: absolute;
-        top: 45%;
+        top: 42%;
         width: auto;
-        padding: 1rem;
+        padding: 0.6rem;
         color: white;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.8rem;
         transition: 0.6s ease;
         user-select: none;
         -webkit-user-select: none;
@@ -92,9 +89,9 @@
     /* Number text (1/3 etc) */
     .numbertext {
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.6rem;
         position: absolute;
-        top: -3rem;
+        top: -2.8rem;
     }
 
 
@@ -108,13 +105,13 @@
 
 
 <div style="width: 100%; padding-bottom: 197.33%; background-size: 100% ! important; position: relative; background: url(images/invi_top_bg.jpg) top center no-repeat;">
-    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="3000" style="position: absolute; z-index: 30; width: 100%; top: 0;"><img src="images/invi_top_tit.png" style="width: 100%;"></div>
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="3000" style="position: absolute; z-index: 10; width: 100%; top: 0;"><img src="images/invi_top_tit.png" style="width: 100%;"></div>
 </div>
 
 <div style="position: relative; width: 100%; "><img src="images/invi_03.jpg" style="width: 100%;"></div>
 
 <div style="width: 100%; padding-bottom: 55.2%; background-size:  100% ! important; position: relative; background: url(images/invi_sign_bg.jpg) top center no-repeat;">
-    <div data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500" style="position: absolute; z-index: 30; width: 100%; top: 0;"><img src="images/invi_sign_tit.png" style="width: 100%;"></div>
+    <div data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500" style="position: absolute; z-index: 10; width: 100%; top: 0;"><img src="images/invi_sign_tit.png" style="width: 100%;"></div>
 </div>
 
 <div style="position: relative; width: 100%; "><img src="images/invi_05.jpg" style="width: 100%;"></div>
@@ -160,22 +157,22 @@
 
         <div class="mySlides">
             <div class="numbertext">1 / 4</div>
-            <img src="images/invi_gallery_1.jpg" style="width:100%">
+            <img src="images/invi_gallery_wide_1.jpg" style="width:100%">
         </div>
 
         <div class="mySlides">
             <div class="numbertext">2 / 4</div>
-            <img src="images/invi_gallery_2.jpg" style="width:100%">
+            <img src="images/invi_gallery_wide_2.jpg" style="width:100%">
         </div>
 
         <div class="mySlides">
             <div class="numbertext">3 / 4</div>
-            <img src="images/invi_gallery_3.jpg" style="width:100%">
+            <img src="images/invi_gallery_wide_3.jpg" style="width:100%">
         </div>
 
         <div class="mySlides">
             <div class="numbertext">4 / 4</div>
-            <img src="images/invi_gallery_4.jpg" style="width:100%">
+            <img src="images/invi_gallery_wide_4.jpg" style="width:100%">
         </div>
 
         <!-- Next/previous controls -->
