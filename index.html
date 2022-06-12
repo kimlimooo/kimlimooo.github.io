@@ -3,151 +3,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-    *,
-    *:before,
-    *:after {
-        box-sizing: border-box;
-    }
 
-    .scroll-counter {
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding: 15px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .aos-all {
-        width: 1000px;
-        max-width: 98%;
-        margin: 50px auto;
-    }
-
-    .aos-item {
-        display: inline-block;
-        float: left;
-        width: 100%;
-        height: 300px;
-        padding: 20px;
-    }
-
-    .aos-item::before {
-        content: attr(data-id);
-        position: relative;
-        width: 100%;
-        height: 100%;
-        float: left;
-        background: #1da4e2;
-        line-height: 260px;
-        text-align: center;
-        color: #fff;
-    }
-
-    @media screen and (min-width: 420px) {
-        .aos-item {
-            width: 50%;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        .aos-item {
-            width: 33%;
-        }
-    }
-
-    .aos-anchors__lines {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        border-top: 2px solid blue;
-        border-bottom: 2px solid red;
-    }
-
-    .aos-anchors__lines::before {
-        content: '';
-        width: 100%;
-        height: 2px;
-        position: absolute;
-        margin: auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: green;
-    }
-
-    .aos-anchors__sidebar {
-        position: fixed;
-        left: 0;
-        top: 0;
-    }
-
-    .aos-anchors__sidebar>div {
-        padding: 5px 10px;
-        background: #f1f1f1;
-    }
-
-    .aos-anchors__content {
-        width: 400px;
-        margin: 50px auto;
-    }
-
-    .aos-anchors__content>div {
-        position: relative;
-        width: 100%;
-        height: 300px;
-        margin-bottom: 50px;
-        background: #f1f1f1;
-        line-height: 300px;
-        text-align: center;
-        color: #333;
-    }
-
-    .aos-anchors__content>div::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-    }
-
-    .aos-anchors__content>div::after {
-        content: attr(data-anchor-id);
-        position: relative;
-        background-color: #f1f1f1;
-    }
-
-    .aos-anchors__content>div[data-placement$="-bottom"]::before {
-        background-color: red;
-    }
-
-    .aos-anchors__content>div[data-placement$="-center"]::before {
-        background-color: green;
-    }
-
-    .aos-anchors__content>div[data-placement$="-top"]::before {
-        background-color: blue;
-    }
-
-    .aos-anchors__content>div[data-placement^="top-"]::before {
-        top: 0;
-    }
-
-    .aos-anchors__content>div[data-placement^="center-"]::before {
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    .aos-anchors__content>div[data-placement^="bottom-"]::before {
-        bottom: 0;
-    }
-
-</style>
 <style>
     .map_btn {
         float: left;
@@ -294,47 +150,19 @@
 
 <div style="position: relative; width: 100%; "><img src="images/invi_05.jpg" style="width: 100%;"></div>
 
-<!--div style="display: table; clear: both;">
-    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_1.jpg" style="width: 100%;"></a></div>
-    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_2.jpg" style="width: 100%;"></a></div>
-
-    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_3.jpg" style="width: 100%;"></a></div>
-    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_4.jpg" style="width: 100%;"></a></div>
-
-    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_5.jpg" style="width: 100%;"></a></div>
-    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_6.jpg" style="width: 100%;"></a></div>
-
-    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_7.jpg" style="width: 100%;"></a></div>
-    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_8.jpg" style="width: 100%;"></a></div>
-
-    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_9.jpg" style="width: 100%;"></a></div>
-    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_10.jpg" style="width: 100%;"></a></div>
-
-</div-->
-
-<div style="position: relative; width: 100%; "><img src="images/invi_07.jpg" style="width: 100%;"></div>
-
-<div style="display: table; clear: both;">
-    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_map_L.jpg" style="width: 100%;"></a></div>
-    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_map_R.jpg" style="width: 100%;"></a></div>
-</div>
-
-<div style="position: relative; width: 100%; "><img src="images/invi_09.jpg" style="width: 100%;"></div>
-
-
 <!-- Images used to open the lightbox -->
 <div class="row">
     <div class="column">
         <img src="images/invi_gallery_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
     </div>
     <div class="column">
-        <img src="images/invi_gallery_1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        <img src="images/invi_gallery_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
     </div>
     <div class="column">
-        <img src="images/invi_gallery_1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        <img src="images/invi_gallery_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
     </div>
     <div class="column">
-        <img src="images/invi_gallery_1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        <img src="images/invi_gallery_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
     </div>
 </div>
 
@@ -372,24 +200,38 @@
             <p id="caption"></p>
         </div>
 
-        <!-- Thumbnail image controls -->
-        <div class="column">
-            <img class="demo" src="images/invi_gallery_1.jpg" onclick="currentSlide(1)">
-        </div>
-
-        <div class="column">
-            <img class="demo" src="images/invi_gallery_1.jpg" onclick="currentSlide(2)">
-        </div>
-
-        <div class="column">
-            <img class="demo" src="images/invi_gallery_1.jpg" onclick="currentSlide(3)" >
-        </div>
-
-        <div class="column">
-            <img class="demo" src="images/invi_gallery_1.jpg" onclick="currentSlide(4)">
-        </div>
     </div>
 </div>
+
+
+<!--div style="display: table; clear: both;">
+    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_1.jpg" style="width: 100%;"></a></div>
+    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_2.jpg" style="width: 100%;"></a></div>
+
+    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_3.jpg" style="width: 100%;"></a></div>
+    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_4.jpg" style="width: 100%;"></a></div>
+
+    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_5.jpg" style="width: 100%;"></a></div>
+    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_6.jpg" style="width: 100%;"></a></div>
+
+    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_7.jpg" style="width: 100%;"></a></div>
+    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_8.jpg" style="width: 100%;"></a></div>
+
+    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_gallery_9.jpg" style="width: 100%;"></a></div>
+    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_gallery_10.jpg" style="width: 100%;"></a></div>
+
+</div-->
+
+<div style="position: relative; width: 100%; "><img src="images/invi_07.jpg" style="width: 100%;"></div>
+
+<div style="display: table; clear: both;">
+    <div class="map_btn"><a href="http://naver.me/GVMXZ0Ud" target="_blank"><img src="images/invi_map_L.jpg" style="width: 100%;"></a></div>
+    <div class="map_btn"><a href="http://kko.to/YUjbDitLl" target="_blank"><img src="images/invi_map_R.jpg" style="width: 100%;"></a></div>
+</div>
+
+<div style="position: relative; width: 100%; "><img src="images/invi_09.jpg" style="width: 100%;"></div>
+
+
 
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
