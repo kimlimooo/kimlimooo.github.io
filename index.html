@@ -1,9 +1,9 @@
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 <meta property="og:image" content="images/thum.jpg">
 <meta property="og:title" content="의호와 예림이가 드리는 초대장">
 <meta property="og:description" content="저희 결혼식에 함께해 주시겠어요?">
 
-<title>의호와 예림이가 결혼을 합니다.</title>
+<title>의호와 예림이가 드리는 초대장</title>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,8 +36,8 @@
         width: 50%;
     }
 
+    /* 갤러리 스타일 */
 
-    /* Create four equal columns that floats next to eachother */
     .column {
         float: left;
         width: 50%;
@@ -110,14 +110,15 @@
         top: -2rem;
         font-family: 'Prata', serif;
     }
-
-
-    img.demo {
-        opacity: 0.6;
+    #menus a p {
+        display: block;
+        opacity: 0;
+        height: 0;
+        position: absolute;
     }
 
 
-    /* 계좌번호 토글 */
+    /* 신랑 신부측 계좌번호 */
     .menu-list {
         max-width: 750px;
         margin: 0 auto;
@@ -131,7 +132,8 @@
     }
 
     /* styling navigation menu */
-    .geeks #menus, .geeks #menus_2 {
+    .geeks #menus,
+    .geeks #menus_2 {
         display: none;
     }
 
@@ -152,14 +154,15 @@
         height: 1.2em;
         vertical-align: middle;
         padding-top: 1em;
-    padding-bottom: 1em;
+        padding-bottom: 1em;
         color: #ccbfab;
     }
+
 </style>
 
 
 
-<div class="con" style=" padding-bottom: 197.33%; background: url(images/invi_top_bg.jpg) top center no-repeat;">
+<div class="con" style=" padding-bottom: 197.333%; background: url(images/invi_top_bg.jpg) top center no-repeat;">
     <div class="aos_layer" data-aos="fade-zoom-in" data-aos-easing="ease-in" data-aos-delay="100" data-aos-offset="0" data-aos-duration="2000" style="position: absolute; z-index: 10; width: 100%; top: 0;"><img src="images/invi_top_tit.png" style="width: 100%; height: auto;"></div>
 </div>
 
@@ -279,7 +282,11 @@
     <div class="geeks">
         <a class="" onclick="geeksforgeeks()"><img src="images/invi_accont_02.jpg" style="width: 100%;"></a>
         <div id="menus">
-            <a href="#"><img src="images/invi_accont_03.jpg" style="width: 100%;"></a>
+            <a onclick="copyData(selectText)">
+                <p id="selectText">1234</p>
+                <img src="images/invi_accont_04.jpg" style="width: 100%;">
+            </a>
+
             <a href="#"><img src="images/invi_accont_04.jpg" style="width: 100%;"></a>
             <a href="#"><img src="images/invi_accont_05.jpg" style="width: 100%;"></a>
         </div>
@@ -318,7 +325,6 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
 
 <script type="text/javascript">
     AOS.init({
@@ -395,7 +401,7 @@
             x.style.display = "block";
         }
     }
-    
+
     function geeksforgeeks_2() {
         var x = document.getElementById("menus_2");
         if (x.style.display === "block") {
@@ -411,6 +417,19 @@
     // Function to toggle the plus menu into minus
     function myFunction(x) {
         x.classList.toggle("fa-chevron-up");
+    }
+
+</script>
+
+<script>
+    function copyData(containerid) {
+        var range = document.createRange();
+        range.selectNode(containerid); //changed here
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        alert("계좌번호가 복사되었습니다.");
     }
 
 </script>
