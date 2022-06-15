@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 
 <style>
@@ -144,8 +144,16 @@
     .geeks a.icon {
         display: block;
         position: absolute;
-        right: 0;
+        right: 1.8em;
         top: 0;
+        bottom: 0;
+        align-items: center;
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: middle;
+        padding-top: 1em;
+    padding-bottom: 1em;
+        color: #ccbfab;
     }
 </style>
 
@@ -278,7 +286,7 @@
 
         <!-- Bar icon for navigation -->
         <a href="javascript:void(0);" class="icon" onclick="geeksforgeeks()">
-            <i onclick="myFunction(this)" class="fa fa-plus-circle">
+            <i onclick="myFunction(this)" class="fa-solid fa-chevron-down">
             </i>
         </a>
     </div>
@@ -298,7 +306,7 @@
 
         <!-- Bar icon for navigation -->
         <a href="javascript:void(0);" class="icon" onclick="geeksforgeeks_2()">
-            <i onclick="myFunction(this)" class="fa fa-plus-circle">
+            <i onclick="myFunction(this)" class="fa-solid fa-chevron-down">
             </i>
         </a>
     </div>
@@ -402,7 +410,7 @@
 <script>
     // Function to toggle the plus menu into minus
     function myFunction(x) {
-        x.classList.toggle("fa-minus-circle");
+        x.classList.toggle("fa-chevron-up");
     }
 
 </script>
