@@ -9,12 +9,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <style>
     body {
         margin: 0 auto;
         overflow-x: hidden !important;
+        font-family: 'Prata', serif;
     }
 
     .con {
@@ -114,8 +116,38 @@
         opacity: 0.6;
     }
 
-</style>
 
+    /* 계좌번호 토글 */
+    .menu-list {
+        max-width: 750px;
+        margin: 0 auto;
+        /*height: 500px;*/
+    }
+
+    /* logo, navigation menu styling */
+    .geeks {
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* styling navigation menu */
+    .geeks #menus, .geeks #menus_2 {
+        display: none;
+    }
+
+    /* link specific styling */
+    .geeks a {
+        display: block;
+    }
+
+    /* navigation toggle menu styling */
+    .geeks a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+</style>
 
 
 
@@ -225,7 +257,6 @@
     </div>
 </div>
 
-
 <div class="con"><img src="images/invi_07.jpg" style="width: 100%;"></div>
 
 <div class="con" style="display: table; clear: both;">
@@ -235,23 +266,58 @@
 
 <div class="con"><img src="images/invi_09.jpg" style="width: 100%;"></div>
 
+<!-- 계좌번호 토글_의호 -->
+<div class="menu-list">
+    <div class="geeks">
+        <a class="" onclick="geeksforgeeks()"><img src="images/invi_accont_02.jpg" style="width: 100%;"></a>
+        <div id="menus">
+            <a href="#"><img src="images/invi_accont_03.jpg" style="width: 100%;"></a>
+            <a href="#"><img src="images/invi_accont_04.jpg" style="width: 100%;"></a>
+            <a href="#"><img src="images/invi_accont_05.jpg" style="width: 100%;"></a>
+        </div>
+
+        <!-- Bar icon for navigation -->
+        <a href="javascript:void(0);" class="icon" onclick="geeksforgeeks()">
+            <i onclick="myFunction(this)" class="fa fa-plus-circle">
+            </i>
+        </a>
+    </div>
+</div>
+
+<div class="con"><img src="images/invi_accont_06.jpg" style="width: 100%;"></div>
+
+<!-- 계좌번호 토글_예림 -->
+<div class="menu-list">
+    <div class="geeks">
+        <a class="" onclick="geeksforgeeks_2()"><img src="images/invi_accont_07.jpg" style="width: 100%;"></a>
+        <div id="menus_2">
+            <a href="#"><img src="images/invi_accont_08.jpg" style="width: 100%;"></a>
+            <a href="#"><img src="images/invi_accont_09.jpg" style="width: 100%;"></a>
+            <a href="#"><img src="images/invi_accont_10.jpg" style="width: 100%;"></a>
+        </div>
+
+        <!-- Bar icon for navigation -->
+        <a href="javascript:void(0);" class="icon" onclick="geeksforgeeks_2()">
+            <i onclick="myFunction(this)" class="fa fa-plus-circle">
+            </i>
+        </a>
+    </div>
+</div>
+
+<div class="con"><img src="images/invi_accont_11.jpg" style="width: 100%;"></div>
 
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
 
-<script>
+<script type="text/javascript">
     AOS.init({
         easing: 'ease-out-back',
         duration: 1000
     });
 
-</script>
-
-<script type="text/javascript">
     jQuery(document).ready(function($) {
         $(".scroll").click(function(event) {
             event.preventDefault();
@@ -307,6 +373,36 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+
+</script>
+
+<script>
+    // Function to toggle the bar
+    function geeksforgeeks() {
+        var x = document.getElementById("menus");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    
+    function geeksforgeeks_2() {
+        var x = document.getElementById("menus_2");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+</script>
+
+<script>
+    // Function to toggle the plus menu into minus
+    function myFunction(x) {
+        x.classList.toggle("fa-minus-circle");
     }
 
 </script>
