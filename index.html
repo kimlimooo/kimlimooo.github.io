@@ -1,9 +1,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 <meta property="og:image" content="images/thum.jpg">
 <meta property="og:title" content="의호와 예림이가 드리는 초대장">
-<meta property="og:description" content="저희 결혼식에 함께해 주시겠어요?">
+<meta property="og:description" content="저희의 결혼식에 당신을 초대합니다.">
 
-<title>의호와 예림이가 드리는 초대장</title>
+<title>의호와 예림이가 결혼을 합니다.</title>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,8 @@
         margin: 0 auto;
         overflow-x: hidden !important;
         font-family: 'Prata', serif;
+        max-width: 640px;
+        background-color: #222;
     }
 
     .con {
@@ -63,7 +65,7 @@
         margin: auto;
         padding: 0;
         width: 93%;
-        max-width: 750px;
+        max-width: 640px;
     }
 
     /* The Close Button */
@@ -110,7 +112,9 @@
         top: -2rem;
         font-family: 'Prata', serif;
     }
-    #menus a p {
+
+    #menus a p,
+    #menus_2 a p {
         display: block;
         opacity: 0;
         height: 0;
@@ -120,9 +124,8 @@
 
     /* 신랑 신부측 계좌번호 */
     .menu-list {
-        max-width: 750px;
+        max-width: 640px;
         margin: 0 auto;
-        /*height: 500px;*/
     }
 
     /* logo, navigation menu styling */
@@ -155,7 +158,7 @@
         vertical-align: middle;
         padding-top: 1em;
         padding-bottom: 1em;
-        color: #ccbfab;
+        color: #cfc2aa;
     }
 
 </style>
@@ -174,9 +177,11 @@
 
 <div class="con"><img src="images/invi_04.jpg" style="width: 100%;"></div>
 
-<div class="con" style="padding-bottom: 158.533%; background: url(images/invi_05.jpg) top center no-repeat;">
+<div class="con" style="padding-bottom: 102.666%; background: url(images/invi_05.jpg) top center no-repeat;">
     <div class="aos_layer" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" style="position: absolute; z-index: 10; width: 100%; top: 0;"><img src="images/invi_05_txt.png" style="width: 100%; height: auto;"></div>
 </div>
+
+<div class="con"><img src="images/invi_06.jpg" style="width: 100%;"></div>
 
 <!-- Images used to open the lightbox -->
 <div class="row" style="display: table; clear: both;">
@@ -282,16 +287,16 @@
     <div class="geeks">
         <a class="" onclick="geeksforgeeks()"><img src="images/invi_accont_02.jpg" style="width: 100%;"></a>
         <div id="menus">
-            <a onclick="copyData(selectText)">
-                <p id="selectText">1234</p>
+            <a onclick="copyData(selectText_brm)">
+                <p id="selectText_brm">989801-00-002412</p>
                 <img src="images/invi_accont_03.jpg" style="width: 100%;">
             </a>
-            <a onclick="copyData(selectText_2)">
-                <p id="selectText_2">352-0291-2263-23</p>
+            <a onclick="copyData(selectText_brm_dad)">
+                <p id="selectText_brm_dad">352-0291-2263-23</p>
                 <img src="images/invi_accont_04.jpg" style="width: 100%;">
             </a>
-            <a onclick="copyData(selectText_3)">
-                <p id="selectText_3">5678</p>
+            <a onclick="copyData(selectText_brm_mom)">
+                <p id="selectText_brm_mom">233073-56-012411</p>
                 <img src="images/invi_accont_05.jpg" style="width: 100%;">
             </a>
         </div>
@@ -311,9 +316,18 @@
     <div class="geeks">
         <a class="" onclick="geeksforgeeks_2()"><img src="images/invi_accont_07.jpg" style="width: 100%;"></a>
         <div id="menus_2">
-            <a href="#"><img src="images/invi_accont_08.jpg" style="width: 100%;"></a>
-            <a href="#"><img src="images/invi_accont_09.jpg" style="width: 100%;"></a>
-            <a href="#"><img src="images/invi_accont_10.jpg" style="width: 100%;"></a>
+            <a onclick="copyData(selectText_brd)">
+                <p id="selectText_brd">110-350-676363</p>
+                <img src="images/invi_accont_08.jpg" style="width: 100%;">
+            </a>
+            <a onclick="copyData(selectText_brd_dad)">
+                <p id="selectText_brd_dad">110-345-058523</p>
+                <img src="images/invi_accont_09.jpg" style="width: 100%;">
+            </a>
+            <a onclick="copyData(selectText_brd_mom)">
+                <p id="selectText_brd_mom">262-043648-02-101</p>
+                <img src="images/invi_accont_10.jpg" style="width: 100%;">
+            </a>
         </div>
 
         <!-- Bar icon for navigation -->
