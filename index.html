@@ -20,7 +20,9 @@
         max-width: 640px;
         background-color: #222;
     }
-
+    a:focus { outline: none;
+        
+    }
     .con {
         overflow-x: hidden !important;
         overflow-y: hidden !important;
@@ -173,13 +175,14 @@
 <div class="con"><img src="images/invi_03.jpg" style="width: 100%;"></div>
 
 <div class="con" style=" padding-bottom: 55.2%; background: url(images/invi_sign_bg.jpg) top center no-repeat;">
-    <div class="aos_layer" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500" style="position: absolute; z-index: 10; width: 100%; top: 0;"><img src="images/invi_sign_tit.png" style="width: 100%; height: auto;"></div>
+    <div class="aos_layer" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1200" style="position: absolute; z-index: 10; width: 100%; top: 0;"><img src="images/invi_sign_tit.png" style="width: 100%; height: auto;"></div>
 </div>
 
 <div class="con"><img src="images/invi_04.jpg" style="width: 100%;"></div>
 
-<div class="con" style="padding-bottom: 102.666%; background: url(images/invi_05.jpg) top center no-repeat;">
-    <div class="aos_layer" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" style="position: absolute; z-index: 10; width: 100%; top: 0;"><img src="images/invi_05_txt.png" style="width: 100%; height: auto;"></div>
+<div class="con" style=" background: url(images/invi_05.jpg) top center no-repeat; position: relative">
+    <div class="aos_layer" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" style=" width: 100%; "><img src="images/invi_05_txt_1.png" style="width: 100%; height: auto;"></div>
+    <div class="aos_layer" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" style=" width: 100%; "><img src="images/invi_05_txt_2.png" style="width: 100%; height: auto;"></div>
 </div>
 
 <div class="con"><img src="images/invi_06.jpg" style="width: 100%;"></div>
@@ -220,9 +223,9 @@
 
 <!-- The Modal/Lightbox -->
 <div id="myModal" class="modal">
-    
+
     <div class="modal-content">
-<span class="close cursor" onclick="closeModal()">&times;</span>
+        <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="mySlides">
             <div class="numbertext">1 / 10</div>
             <img src="images/invi_gallery_wide_1.jpg" style="width:100%">
